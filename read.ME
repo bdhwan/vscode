@@ -1,0 +1,12 @@
+version: "3"
+services:
+  code-server:
+    image: bdhwan/vscode:0.0.3
+    ports:
+      - "50000:8080"
+      - "50001-50010:50001-50010"
+    volumes:
+      - "/home/bdhwan/ssd/vscode/project:/root/project"
+      - "/home/bdhwan/ssd/vscode/share:/root/.local/share/code-server"
+    environment:
+      PASSWORD: rock1148

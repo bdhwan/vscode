@@ -25,11 +25,11 @@ RUN tsc --version
 
 USER root
 
-RUN mkdir -p /home/project \
-  && mkdir -p /home/.local/share/code-server
+RUN mkdir -p /root/project \
+  && mkdir -p /root/.local/share/code-server
 
-WORKDIR /home/project
-VOLUME [ "/home/project" ]
+WORKDIR /root/project
+VOLUME [ "/root/project" ]
 
 EXPOSE 8080
 
